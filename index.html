@@ -11,9 +11,9 @@
 </head>
 <body>
 
-<div data-role="page">
+<div data-role="page" id="Menu">
 
-	<div data-role="header">
+	<div data-role="header" style="background-color: aquamarine">
 		<h1>Menu</h1>
 	</div><!-- /header -->
 
@@ -21,24 +21,30 @@
 		<div class="ui-grid-b">
             <div class="ui-block-a" style="height:100%;text-align:center">
                 <div style="border:1px #f00 solid;">
-                <img src="images/hamburger.png" style="border:1px #0f0 solid; width:150px;margin:5px 15px 5px 18px">                    
-                    <p>Hamburger</p>
+                    <a href="#hamburger"data-transition="slideup">
+                        <img src="images/hamburger.png" style="border:1px #0f0 solid; width:150px;margin:5px 15px 5px 18px">                    
+                        <p>hamburger</p>
+                    </a>
                 </div>
             </div>
             <div class="ui-block-b" style="height:100%;text-align:center">
                 <div>
-                    <img src="images/cake_big.png" style="border:1px #0f0 solid; width:150px;margin:5px 15px 5px 18px">    
+                    <a href="#cake_big"data-transition="flip">
+                        <img src="images/cake_big.png" style="border:1px #0f0 solid; width:150px;margin:5px 15px 5px 18px">    
                         <p>Cake big</p>
+                    </a>    
                 </div>
             </div>
             <div class="ui-block-c" style="height:100%;text-align:center">
                 <div>
-                    <img src="images/cake1.png" style="border:1px #0f0 solid; width:150px;margin:5px 15px 5px 18px">    
+                    <a href="Cake1.html">
+                        <img src="images/cake1.png" style="border:1px #0f0 solid; width:150px;margin:5px 15px 5px 18px">    
                         <p>Cake1</p>
+                    </a>
                 </div>
             </div>
         </div>
-    
+    </div>
         <div class="ui-grid-b">
             <div class="ui-block-a" style="height:100%;text-align:center">
                 <div style="border:1px #f00 solid;">
@@ -59,11 +65,61 @@
                 </div>
             </div>
         </div>
-	</div>
-	<div data-role="footer">
+	<div data-role="footer" data-position="fixed">
 		<h4>&copy; 2020 All rights reversed.</h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
+    <div data-role="page" id="hamburger">
+
+	    <div data-role="header" data-position="fixed">
+            <h1>hamburger</h1>
+            <a href="#Menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+	    </div><!-- /header -->
+
+        <div role="main" class="ui-content" style="text-align:center">
+            <img src="images/hamburger.png" width="30%">
+            <img src="images/hamburger.png" width="30%">
+            <img src="images/hamburger.png" width="30%">
+            <img src="images/hamburger.png" width="30%">
+            <img src="images/hamburger.png" width="30%">
+            <img src="images/hamburger.png" width="30%">
+		    <p><a href="#Menu" data-transition="flip">Back to Menu</a></p>
+	    </div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+    <div data-role="page" id="cake_big">
+
+        <div data-role="header">
+            <h1>cake_big</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content" style="text-align:center">
+            <img src="images/cake_big.png" width="30%">
+            <p><a href="#Menu" data-transition="flip">Back to Menu</a></p>
+        </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+</div><!-- /footer -->
+</div><!-- /page -->
+    <div data-role="page" id="Cake1">
+
+        <div data-role="header">
+            <h1>Caka1</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content" style="text-align:center">
+            <img src="images/cake1" width="30%">
+            <p><a href="#Menu" data-transition="flip">Back to Menu</a></p>
+        </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+</div><!-- /footer -->
+</div><!-- /page -->
 </body>
 </html>
