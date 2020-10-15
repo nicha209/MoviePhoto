@@ -7,7 +7,12 @@
 
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
 	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style type="text/css">
+        a {
+           text-decoration:none;
+        }
+    </style>
 </head>
 <body>
 
@@ -22,7 +27,7 @@
             <div class="ui-block-a" style="height:100%;text-align:center">
                 <div style="border:1px #f00 solid;">
                     <a href="#hamburger"data-transition="slideup">
-                        <img src="images/hamburger.png" style="border:1px #0f0 solid; width:150px;margin:5px 15px 5px 18px">                    
+                        <img src="images/hamburger.png" style="border:1px #0f0 solid; width:100px;margin:5px 15px 5px 18px">                    
                         <p>hamburger</p>
                     </a>
                 </div>
@@ -30,15 +35,15 @@
             <div class="ui-block-b" style="height:100%;text-align:center">
                 <div>
                     <a href="#cake_big"data-transition="flip">
-                        <img src="images/cake_big.png" style="border:1px #0f0 solid; width:150px;margin:5px 15px 5px 18px">    
+                        <img src="images/cake_big.png" style="border:1px #0f0 solid; width:100px;margin:5px 15px 5px 18px">    
                         <p>Cake big</p>
                     </a>    
                 </div>
             </div>
             <div class="ui-block-c" style="height:100%;text-align:center">
                 <div>
-                    <a href="Cake1.html">
-                        <img src="images/cake1.png" style="border:1px #0f0 solid; width:150px;margin:5px 15px 5px 18px">    
+                    <a href="Cake1.html" rel="external">
+                        <img src="images/cake1.png" style="border:1px #0f0 solid; width:100px;margin:5px 15px 5px 18px">    
                         <p>Cake1</p>
                     </a>
                 </div>
@@ -48,19 +53,19 @@
         <div class="ui-grid-b">
             <div class="ui-block-a" style="height:100%;text-align:center">
                 <div style="border:1px #f00 solid;">
-                <img src="images/muffin.png" style="border:1px #0f0 solid; width:150px;margin:5px 15px 5px 18px">                    
+                <img src="images/muffin.png" style="border:1px #0f0 solid; width:100px;margin:5px 15px 5px 18px">                    
                     <p>Muffin</p>
                 </div>
             </div>
             <div class="ui-block-b" style="height:100%;text-align:center">
                 <div>
-                    <img src="images/pizza_slice.png" style="border:1px #0f0 solid; width:150px;margin:5px 15px 5px 18px">    
+                    <img src="images/pizza_slice.png" style="border:1px #0f0 solid; width:100px;margin:5px 15px 5px 18px">    
                         <p>Pizza</p>
                 </div>
             </div>
             <div class="ui-block-c" style="height:100%;text-align:center">
                 <div>
-                    <img src="images/cake.png" style="border:1px #0f0 solid; width:150px;margin:5px 15px 5px 18px">    
+                    <img src="images/cake.png" style="border:1px #0f0 solid; width:100px;margin:5px 15px 5px 18px">    
                         <p>Cake</p>
                 </div>
             </div>
@@ -108,8 +113,9 @@
 </div><!-- /page -->
     <div data-role="page" id="Cake1">
 
-        <div data-role="header">
+        <div data-role="header" data-position="fixed">
             <h1>Caka1</h1>
+            <a href="#Menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
         </div><!-- /header -->
 
         <div role="main" class="ui-content" style="text-align:center">

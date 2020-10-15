@@ -11,15 +11,17 @@
 </head>
 <body>
 
-<div data-role="page">
+<div data-role="page"id="cake1Menu">
 
-	<div data-role="header" style="background-color: aquamarine">
-	<h1>Cake1</h1>
-	</div><!-- /header -->
+	<div data-role="header" data-position="fixed">
+        <h1>cake1</h1>
+        <a href="index.html" rel="external"
+            class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+    </div><!-- /header -->
 
 	<div role="main" class="ui-content" style="text-align: center">
             <ul data-role="listview" data-inset="true">
-                    <li><a href="#">
+                    <li><a href="#cakes">
                             <img src="images/cakes1.png">
                             <span class="ui-li-count" style="color:coral;background-color:black">$200</span>
                             <h2>cake</h2>
@@ -41,17 +43,38 @@
                             <img src="images/birthday_cake.png">
                             <span class="ui-li-count" style="color:coral;background-color :black">$200</span>
                             <h2>Wolfgang Amadeus Phoenix</h2>
-                            <p>wedding</p></a>
+                            <p>birthday_cake</p></a>
                         </li>
                     <li><a href="#">
                             <img src="images/cookie.png">
                             <span class="ui-li-count" style="color:coral;background-color :black">$200</span>
                             <h2>Wolfgang Amadeus Phoenix</h2>
-                            <p>wedding</p></a>
+                            <p>cookie</p></a>
                         </li>
                     </ul>
+                    <div role="main" class="ui-content" style="text-align:center">
+                        <img src="images/cake1" width="30%">
+                    </div><!-- /content -->
     </div><!-- /content -->
-	
+	<div data-role="footer" data-position="fixed">
+		<h4>&copy; 2020 All rights reversed.</h4>
+	</div><!-- /footer -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="cakes">
+
+	    <div data-role="header" data-position="fixed">
+            <h1>cakes</h1>
+            <a href="#cake1Menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+	    </div><!-- /header -->
+
+        <div role="main" class="ui-content" style="text-align:center">
+            <img src="images/cakes1.png" width="30%">
+           		    <p><a href="#cake1Menu" data-transition="flip">Back to Menu</a></p>
+	    </div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
